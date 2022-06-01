@@ -1,7 +1,5 @@
-## SAR-DDPM Inference on real SAR images
-
 """
-Train a super-resolution model.
+SAR-DDPM Inference on real SAR images.
 """
 
 import argparse
@@ -33,7 +31,7 @@ from skimage.metrics import structural_similarity as ssim
 
 val_dir = 'path_to_validation_data/'
 base_path = 'path_to_save_results/'
-resume_checkpoint_clean = './weights/model004599.pt'
+resume_checkpoint_clean = './weights/sar_ddpm.pt'
 
 
 
