@@ -335,7 +335,7 @@ class TrainLoop:
                     filename = f"model{(self.step+self.resume_step):06d}.pt"
                 else:
                     filename = f"ema_{rate}_{(self.step+self.resume_step):06d}.pt"
-                with bf.BlobFile(bf.join("./weights_git", filename), "wb") as f:
+                with bf.BlobFile(bf.join("./weights", filename), "wb") as f:
                     th.save(state_dict, f)
 
         save_checkpoint(0, self.mp_trainer.master_params)
@@ -360,7 +360,7 @@ class TrainLoop:
                     filename = f"model{(self.step+self.resume_step):06d}.pt"
                 else:
                     filename = f"ema_{rate}_{(self.step+self.resume_step):06d}.pt"
-                with bf.BlobFile(bf.join("./weights_git", filename), "wb") as f:
+                with bf.BlobFile(bf.join("./weights", filename), "wb") as f:
                     th.save(state_dict, f)
 
         save_checkpoint_val(0, self.mp_trainer.master_params)
