@@ -18,3 +18,19 @@ MODEL_FLAGS="--attention_resolutions 32,16,8 --class_cond True --diffusion_steps
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 CUDA_VISIBLE_DEVICES=0 python scripts/sarddpm_train.py $MODEL_FLAGS
 ```
+
+
+### Acknowledgement
+
+This code is based on DDPM implementation in [guided-diffusion](https://github.com/openai/guided-diffusion)
+
+
+### Citation
+
+```
+@ARTICLE{perera2022sar,
+  author={Perera, Malsha V. and Nair, Nithin Gopalakrishnan and Bandara, Wele Gedara Chaminda and Patel, Vishal M.},
+  journal={IEEE Geoscience and Remote Sensing Letters}, 
+  title={SAR Despeckling using a Denoising Diffusion Probabilistic Model}, 
+  year={2023}}
+```
