@@ -20,12 +20,12 @@ CUDA_VISIBLE_DEVICES=0 python scripts/sarddpm_train.py $MODEL_FLAGS
 ```
 
 
-### Acknowledgement
+### Acknowledgement:
 
 This code is based on DDPM implementation in [guided-diffusion](https://github.com/openai/guided-diffusion)
 
 
-### Citation
+### Citation:
 
 ```
 @ARTICLE{perera2022sar,
